@@ -61,7 +61,7 @@
     {
       "apiVersion": "2015-08-01",
       "name": "[parameters('hostingPlanName')]",
-      "hostingPlanName":"Shared",
+      "hostingPlanName":"Free",
       "siteName":"webapptest",
       "type": "Microsoft.Web/serverfarms",
       "location": "[parameters('location')]",
