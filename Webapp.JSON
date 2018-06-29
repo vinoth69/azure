@@ -11,7 +11,11 @@
           "testapp",
           "webapptest"
           ],
-        "defaultValue": "webapptest"
+        "defaultValue": "webapptest",
+        "metadata": {
+        "description": "The pricing tier for the hosting plan."
+		}
+       
       }
     },
     "hostingPlanName": {
@@ -23,7 +27,10 @@
           "dedicated",
           "shared"
           ],
-        "defaultValue": "shared"
+        "defaultValue": "shared",
+		"metadata": {
+        "description": "The pricing tier for the hosting plan."
+		}
       }
     },
     "sku": {
