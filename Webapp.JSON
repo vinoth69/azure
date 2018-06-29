@@ -2,17 +2,7 @@
   "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
   "contentVersion": "1.0.0.0",
   "parameters": {
-    "hostingPlanName": {
-      "type":"string",
-      "allowedValues": [
-      "shared",
-      "free",
-      "basic"
-      ],
-      "defaultValue": "shared",
-      "metadata": {
-        "description": "The pricing tier for the hosting plan."
-      } 
+    "hostingPlanName": "shared"
     "sku": {
       "type": "string",
       "allowedValues": [
