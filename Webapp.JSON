@@ -60,7 +60,7 @@
   "resources": [
     {
       "apiVersion": "2015-08-01",
-      "siteName":"webapptest",
+      "siteName": "webapptest",
       "type": "Microsoft.Web/serverfarms",
       "location": "[parameters('location')]",
       "sku": {
