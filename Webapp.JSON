@@ -5,15 +5,15 @@
     "siteName": {
       "type": "string",
       "metadata": {
-        "description": "The name of the web app that you wish to create."
-        "defaultValue": "weapptest",
+        "description": "The name of the web app that you wish to create.",
+        "defaultValue": "weapptest"
       }
     },
     "hostingPlanName": {
       "type": "string",
       "metadata": {
-        "description": "The name of the App Service plan to use for hosting the web app."
-        "defaultValue": "shared",
+        "description": "The name of the App Service plan to use for hosting the web app.",
+        "defaultValue": "shared"
       }
     },
     "sku": {
