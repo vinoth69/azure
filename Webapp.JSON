@@ -2,37 +2,6 @@
   "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
   "contentVersion": "1.0.0.0",
   "parameters": {
-    "siteName": {
-      "type": "string",
-      "metadata": {
-        "description": "The name of the web app that you wish to create.",
-        "allowedValues": [
-          "app",
-          "testapp",
-          "webapptest"
-          ],
-        "defaultValue": "webapptest",
-        "metadata": {
-        "description": "The pricing tier for the hosting plan."
-		}
-       
-      }
-    },
-    "hostingPlanName": {
-      "type": "string",
-      "metadata": {
-        "description": "The name of the App Service plan to use for hosting the web app.",
-        "allowedValues": [
-          "default",
-          "dedicated",
-          "shared"
-          ],
-        "defaultValue": "shared",
-		"metadata": {
-        "description": "The pricing tier for the hosting plan."
-		}
-      }
-    },
     "sku": {
       "type": "string",
       "allowedValues": [
@@ -92,6 +61,8 @@
     {
       "apiVersion": "2015-08-01",
       "name": "[parameters('hostingPlanName')]",
+      "hostingPlanName":"Shared",
+      "siteName":"webapptest",
       "type": "Microsoft.Web/serverfarms",
       "location": "[parameters('location')]",
       "sku": {
