@@ -2,6 +2,17 @@
   "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
   "contentVersion": "1.0.0.0",
   "parameters": {
+    "hostingPlanName": {
+      "type":"string"
+      "allowedValues": [
+      "shared",
+      "free",
+      "basic"
+      ],
+      "defaultValue": "shared",
+      "metadata": {
+        "description": "The pricing tier for the hosting plan."
+      } 
     "sku": {
       "type": "string",
       "allowedValues": [
@@ -61,7 +72,6 @@
     {
       "apiVersion": "2015-08-01",
       "name": "nbmewebappdefault",
-      "hostingPlanName":"Free",
       "siteName":"webapptest",
       "type": "Microsoft.Web/serverfarms",
       "location": "[parameters('location')]",
