@@ -3,7 +3,6 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "hostingPlanName": "shared",
-  }
     "sku": {
       "type": "string",
       "allowedValues": [
