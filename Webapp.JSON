@@ -60,7 +60,7 @@
   "resources": [
     {
       "apiVersion": "2015-08-01",
-      "name": "[parameters('hostingPlanName')]",
+      "name": "nbmewebappdefault",
       "hostingPlanName":"Free",
       "siteName":"webapptest",
       "type": "Microsoft.Web/serverfarms",
