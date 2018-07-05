@@ -8,5 +8,5 @@ Add-AzureRmAccount -Credential $psCred -TenantId ${bamboo.azure.tenantid} -Servi
 Get-AzureRmADApplication
 
 New-AzureRmResourceGroupDeployment -Name ExampleDeployment -ResourceGroupName ExampleResourceGroup `
-  -TemplateUri ${bamboo.bamboo.build.working.directory}/target/Webapp.JSON `
+  -TemplateUri Webapp.JSON `
   -storageAccountType Standard_GRS
