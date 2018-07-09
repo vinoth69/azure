@@ -1,10 +1,8 @@
-$azureAccountName ="${bamboo.azure.accountname}"
-$azurePassword = ConvertTo-SecureString "${bamboo.azure.accountpassword}" -AsPlainText -Force
+$azureAccountName = $accname;
+$azurePassword = ConvertTo-SecureString $pwd -AsPlainText -Force
 $psCred = New-Object System.Management.Automation.PSCredential($azureAccountName, $azurePassword)
 #Login-AzureRmAccount -C -Credential $psCred
 
-Add-AzureRmAccount -Credential $psCred -TenantId ${bamboo.azure.tenantid} -ServicePrincipal
+Add-AzureRmAccount -Credential $psCred -TenantId $tenantid -ServicePrincipal
 
 Get-AzureRmADApplication
-
-New-AzureRmResourceGroupDeployment -ResourceGroupName ExampleResourceGroup -TemplateFile Webapp.JSON
