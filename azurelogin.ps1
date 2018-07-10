@@ -11,10 +11,10 @@ param
     [string]
     $pwd,
 	
-	# Azure AD Tenant Id.
+    # Azure AD Tenant Id.
     [Parameter(Mandatory = $true)]
     [string]
-    $tenantid,
+    $tenantid
 )
 
 $azureAccountName = $accname
